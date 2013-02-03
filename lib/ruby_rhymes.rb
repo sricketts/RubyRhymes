@@ -124,7 +124,7 @@ class Phrase
     # based entirely off of http://www.russellmcveigh.info/content/html/syllablecounter.php
     def self.auto_syllables(word)
       valid_word_parts = []
-      word_parts = word.split(/[^aeiouy]+/).each do |value|
+      word.split(/[^aeiouy]+/).each do |value|
         if !value.empty?
           valid_word_parts << value
         end
